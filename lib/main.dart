@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,19 +23,23 @@ class MyHomePage extends StatefulWidget {
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
-
+//https://www.youtube.com/watch?v=-jvGV7HmvgM&list=PLum90SMJW-vltQ_ERf3rhjq_UZWJ2enEG&index=7&t=0s
 class _MyHomePageState extends State<MyHomePage> {
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text ('Perfil'),
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios), 
-          onPressed: (){}
-          ),
+        title: Text('Perfil'),
+        backgroundColor: Color(0xFF1E8161),
+        leading: IconButton(icon: Icon(Icons.arrow_back_ios), 
+        onPressed: () {},
+        ),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.search),
+            onPressed: (){},
+          )
+        ],
       ),
     );
   }
